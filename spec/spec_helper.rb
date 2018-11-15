@@ -9,6 +9,8 @@ SimpleCov.start
 module SpecHelper
 end
 
+require 'webmock/rspec'
+
 require 'fastlane' # to import the Action super class
 require 'fastlane/plugin/request_reviewers' # import the actual plugin
 
