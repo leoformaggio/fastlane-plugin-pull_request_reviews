@@ -4,12 +4,12 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?("UI")
 
   module Helper
-    class RequestReviewersHelper
+    class PullRequestReviewsHelper
       # class methods that you define here become available in your action
-      # as `Helper::RequestReviewersHelper.your_method`
+      # as `Helper::PullRequestReviewsHelper.your_method`
       #
       def self.show_message
-        UI.message("Hello from the request_reviewers plugin helper!")
+        UI.message("Hello from the pull_request_reviews plugin helper!")
       end
     end
   end

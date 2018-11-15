@@ -2,16 +2,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fastlane/plugin/request_reviewers/version'
+require 'fastlane/plugin/pull_request_reviews/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fastlane-plugin-request_reviewers'
-  spec.version       = Fastlane::RequestReviewers::VERSION
+  spec.name          = 'fastlane-plugin-pull_request_reviews'
+  spec.version       = Fastlane::PullRequestReviews::VERSION
   spec.author        = 'Leonardo Formaggio'
   spec.email         = 'leoformaggio@gmail.com'
 
   spec.summary       = 'Requests a PR review on GitHub'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-request_reviewers"
+  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-pull_request_reviews"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

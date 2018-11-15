@@ -1,9 +1,9 @@
 require 'fastlane/action'
-require_relative '../helper/request_reviewers_helper'
+require_relative '../helper/pull_request_reviews_helper'
 
 module Fastlane
   module Actions
-    class RequestReviewersAction < Action
+    class AddReviewersAction < Action
       def self.run(params)
         number = params[:number]
         UI.message("Requesting reviewers for pull request ##{params[:number]}")
@@ -64,10 +64,10 @@ module Fastlane
 
       def self.example_code
         [
-          'request_reviewers(
+          'add_reviewers(
             team_reviewers: ["justice-league"]
           )',
-          'request_reviewers(
+          'add_reviewers(
             repo: "fastlane/fastlane",
             number: 42,
             reviewers: ["octocat", "hubot"]

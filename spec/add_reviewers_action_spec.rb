@@ -1,5 +1,5 @@
-describe Fastlane::Actions::RequestReviewersAction do
-  describe 'request_reviewers' do
+describe Fastlane::Actions::AddReviewersAction do
+  describe 'add_reviewers' do
     let(:response_body) { File.read('spec/fixtures/github_request_reviewers_response.json') }
 
     before :each do
@@ -15,7 +15,7 @@ describe Fastlane::Actions::RequestReviewersAction do
 
       context 'passing all parameters' do
         data = "lane :test do
-          request_reviewers(
+          add_reviewers(
             api_token: '123456789',
             repo: 'octocat/Hello-World',
             number: 1347,
@@ -36,7 +36,7 @@ describe Fastlane::Actions::RequestReviewersAction do
         end
 
         data = "lane :test do
-          request_reviewers(
+          add_reviewers(
             api_token: '123456789',
             reviewers: ['octocat', 'hubot', 'other_user'],
             team_reviewers: ['justice-league']
@@ -59,7 +59,7 @@ describe Fastlane::Actions::RequestReviewersAction do
         end
 
         data = "lane :test do
-          request_reviewers(
+          add_reviewers(
             api_token: '123456789',
             repo: 'octocat/Hello-World',
             number: 1347
@@ -80,7 +80,7 @@ describe Fastlane::Actions::RequestReviewersAction do
         end
 
         data = "lane :test do
-          request_reviewers(
+          add_reviewers(
             api_token: '123456789'
           )
         end"

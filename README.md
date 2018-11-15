@@ -1,16 +1,16 @@
-# request_reviewers plugin
+# pull_request_reviews plugin
 
-[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-request_reviewers)
+[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-pull_request_reviews)
 
 ## Getting Started
 
-This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-request_reviewers`, add it to your project by running:
+This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-pull_request_reviews`, add it to your project by running:
 
 ```bash
-fastlane add_plugin request_reviewers
+fastlane add_plugin pull_request_reviews
 ```
 
-## About request_reviewers
+## About pull_request_reviews
 
 Requests a PR review on GitHub
 

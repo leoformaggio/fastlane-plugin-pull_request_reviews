@@ -12,6 +12,6 @@ end
 require 'webmock/rspec'
 
 require 'fastlane' # to import the Action super class
-require 'fastlane/plugin/request_reviewers' # import the actual plugin
+require 'fastlane/plugin/pull_request_reviews' # import the actual plugin
 
 Fastlane.load_actions # load other actions (in case your plugin calls other actions or shared values)
