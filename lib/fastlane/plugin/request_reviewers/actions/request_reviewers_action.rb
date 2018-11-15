@@ -31,6 +31,7 @@ module Fastlane
 
           Actions.lane_context[SharedValues::CREATE_PULL_REQUEST_HTML_URL] = html_url
           return html_url
+        end
       end
 
       def self.default_repo
